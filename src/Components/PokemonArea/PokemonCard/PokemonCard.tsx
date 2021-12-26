@@ -27,10 +27,6 @@ class PokemonCard extends Component<PokemonCardProps, PokemonCardState> {
         const { name, url } = this.props;
         const pokemonIndex = url.split('/')[url.split('/').length - 2];
         const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`;
-        console.log(name);
-        console.log(imageUrl);
-
-        console.log(pokemonIndex);
 
         this.setState({ name, imageUrl, pokemonIndex });
     }
